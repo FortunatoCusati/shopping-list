@@ -1,0 +1,16 @@
+<div class="w-full">
+    <!-- Barra di navigazione -->
+    <div class="flex justify-center p-5">
+        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" (click)="tab=1" [ngClass]="{'btn-neutral' : tab === 1}">Home</button>
+        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" (click)="tab=2" [ngClass]="{'btn-neutral' : tab === 2}">Products to Buy</button>
+    </div>
+
+    <!-- Sezione con contenuto -->
+    <div>
+        @if(tab === 1){
+            <app-home></app-home>
+        } @else {
+            <app-products-to-buy></app-products-to-buy>
+        }
+    </div>
+</div>
