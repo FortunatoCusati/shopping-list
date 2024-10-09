@@ -1,3 +1,9 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "c5a8",
+      "name": "pasta",
+      "completed": true
+    }
+  ]
 }
